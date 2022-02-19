@@ -3,10 +3,29 @@
 //todays time and date
 var utahTime= document.getElementById("utahTime");
 var currentTime = moment();
-utahTime.textContent = currentTime.format("dddd, MMMM Do YYYY, h:mm:ss:a");
+utahTime.textContent = currentTime.format("dddd, MMMM Do YYYY, h:mm:a");
+
+//for loop for time sections
+var container = document.querySelector(".container");
+for (var i = 0; i < array.length; i++) {
+   container.innerHTML += '<div class="box"></div>';
+}
 
 
+//event listener for saving button on reminders
+document.querySelector(".saveBtn").addEventListener("click", function() {
+  var reminders = document.getElementById("reminders").value;
+  //local storage
+  localStorage.setItem("reminders", reminders);
+  alert('reminder saved');
+  console.log("reminder was saved") 
+ 
+}, false)
+reminders.value = localStorage.getItem("reminders")
 
+
+//for loop to save all the text areas!!!!!
+//for(i=0; i < reminders.length; i++) {}
 
 //var createTask = function(taskText, taskDate, taskList) {
     //create elements that make up a task
