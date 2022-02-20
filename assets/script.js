@@ -4,24 +4,46 @@
 var utahTime= document.getElementById("utahTime");
 var currentTime = moment();
 utahTime.textContent = currentTime.format("dddd, MMMM Do YYYY, h:mm:a");
+var storage = JSON.parse(localStorage.getItem("reminders")) || {};
+console.log(storage)
 
-//for loop for time sections
-var container = document.querySelector(".container");
-for (var i = 0; i < array.length; i++) {
-   container.innerHTML += '<div class="box"></div>';
+//create a object loop that will take the key and assign the value of the key to the corresponding id of the textarea
+for(var [key, value] of Object.entries(storage)) {
+  console.log(key, value);
+  //var saveReminders =
+//textarea.append(storage);
+
+  //  var reminder = document.getElementsByClassName("reminders").innerHTML = storage
 }
 
 
 //event listener for saving button on reminders
-document.querySelector(".saveBtn").addEventListener("click", function() {
-  var reminders = document.getElementById("reminders").value;
-  //local storage
-  localStorage.setItem("reminders", reminders);
-  alert('reminder saved');
+document.querySelector(".container-fluid").addEventListener("click", function(event) {
+  if(event.target.matches("button") === false) {
+  return
+}
+var id = "x" + event.target.id
+  var reminders = document.getElementById(id).value; 
+    //local storage
+   // console.log(reminders)
+
+  storage[id] = reminders
+  localStorage.setItem("reminders", JSON.stringify(storage));
   console.log("reminder was saved") 
  
-}, false)
-reminders.value = localStorage.getItem("reminders")
+
+ //localStorage.getItem("reminders");  
+});
+function getValue() {
+  var storedText = localStorage.getItem("reminders");
+  if(storedText != null) {
+    
+  }
+}
+
+
+
+
 
 
 //for loop to save all the text areas!!!!!
