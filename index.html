@@ -29,64 +29,109 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="utahTime" class="lead"></p>
     </header>
-    <div class="container-fluid">
+    <div class="container">
       <!-- Timeblocks go here -->
-      <div class="row">
 
-        <div class="col-1 hour">
-          <span class= "row justify-content-end col align-items-start">12:00am</span>
+      <!--9am timeblock-->
+      <div class="row time-block" data-time="9">
+        <div class="col-1 hour pt-3">9AM
         </div>
-        <div class="col-9 description row justify-content-start">
-          <textarea class="reminders" id="x1"></textarea>
-        </div>
-        <div class="col-2 row justify-content-end ">
-          <button id= "1" class = "saveBtn rounded-start rounded-end text-center pl-4 pr-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
+          <textarea id="x1" class="reminders col-10 description"></textarea>
+          <button id= "1" class = "saveBtn col-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
             <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
           </svg></button>
         </div>
-      </div>
-      <div class="row">
-
-        <div class="col-1 hour">
-          <span class= "row justify-content-end col align-items-start">1:00am</span>
+    
+      <!--10am timeblock-->
+      <div class="row time-block" data-time="10">
+        <div class="col-1 hour pt-3">10AM
         </div>
-        <div class="col-9 description row justify-content-start">
-          <textarea class="reminders" id ="x2"></textarea>
-        </div>
-        <div class="col-2 row justify-content-end">
-          <button id="2" class = "saveBtn rounded-start rounded-end text-center pl-4 pr-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
+          <textarea id="x2" class="reminders col-10 description"></textarea>
+          <button id= "2" class = "saveBtn col-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
             <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
           </svg></button>
         </div>
-      </div>
-      <div class="row">
 
-        <div class="col-1 hour">
-          <span class= "row justify-content-end col align-items-start">2:00am</span>
+      <!--11am timeblock-->
+      <div class="row time-block" data-time="11">
+        <div class="col-1 hour pt-3">11AM
         </div>
-        <div class="col-10 description row justify-content-start">
-          <textarea id="x3" class="reminders form-control border-bottom-0 border-right-0 border-top-0"></textarea>
-        </div>
-        <div class="col-1 row justify-content-end ">
-          <button id= "3" class = "saveBtn rounded-start rounded-end text-center pl-4 pr-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
+          <textarea id="x3" class="reminders col-10 description"></textarea>
+          <button id= "3" class = "saveBtn col-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
             <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
           </svg></button>
         </div>
-      </div>
-      <div class="row">
 
-        <div class="col-1 hour">
-          <span class= "row justify-content-end col align-items-start">3:00am</span>
+      <!--12pm timeblock-->
+      <div class="row time-block" data-time="12">
+        <div class="col-1 hour pt-3">12PM
         </div>
-        <div class="col-9 description row justify-content-start">
-          <textarea id ="x4" class="reminders"></textarea>
-        </div>
-        <div class="col-2 row justify-content-end ">
-          <button id= "4" class = "saveBtn rounded-start rounded-end text-center pl-4 pr-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
+          <textarea id="x4" class="reminders col-10 description"></textarea>
+          <button id= "4" class = "saveBtn col-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
             <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
           </svg></button>
         </div>
-      </div>
+
+      <!--1pm time block-->
+      <div class="row time-block" data-time="13">
+        <div class="col-1 hour pt-3">1PM
+        </div>
+          <textarea id="x5" class="reminders col-10 description"></textarea>
+          <button id= "5" class = "saveBtn col-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
+            <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
+          </svg></button>
+        </div>
+      
+      <!--2pm timeblock-->
+      <div class="row time-block" data-time="14">
+        <div class="col-1 hour pt-3">2PM
+        </div>
+          <textarea id="x6" class="reminders col-10 description"></textarea>
+          <button id= "6" class = "saveBtn col-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
+            <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
+          </svg></button>
+        </div>
+
+      <!--3pm timeblock-->
+      <div class="row time-block"data-time="15">
+        <div class="col-1 hour pt-3">3PM
+        </div>
+          <textarea id="x7" class="reminders col-10 description"></textarea>
+          <button id= "7" class = "saveBtn col-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
+            <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
+          </svg></button>
+        </div>
+
+      <!--4pm timeblock-->
+      <div class="row time-block" data-time="16">
+        <div class="col-1 hour pt-3">4PM
+        </div>
+          <textarea id="x8" class="reminders col-10 description"></textarea>
+          <button id= "8" class = "saveBtn col-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
+            <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
+          </svg></button>
+        </div>
+
+      <!--5pm timeblock-->
+      <div class="row time-block" data-time="17">
+        <div class="col-1 hour pt-3">5PM
+        </div>
+          <textarea id="x9" class="reminders col-10 description"></textarea>
+          <button id= "9" class = "saveBtn col-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
+            <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
+          </svg></button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
 
       </div>
 

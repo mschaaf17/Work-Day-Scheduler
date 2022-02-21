@@ -9,8 +9,8 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black !important;
-  padding: 10px !important;
+  border-left: 1px solid black;
+  padding: 10px;
 }
 
 .jumbotron {
